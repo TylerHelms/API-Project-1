@@ -4,14 +4,13 @@ let factElement = document.getElementById('fact');
 
 
 //EVENT LISTENER 
-let btn = document.getElementById('clickThis');
+let btn = document.getElementById('clickThis'); 
 
 btn.addEventListener('click', async (event) => {
-    const fact = await fetchResult(event)
+    const fact = await fetchResult(event) // await expression causes async function execution to pause until a Promise is settled - settles when promise fulfilled 
     console.log(fact)
     factElement.innerText = fact; 
 }); 
-
 
 
 //FECTH
