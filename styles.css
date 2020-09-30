@@ -10,6 +10,7 @@ margin-right: auto;
 
 .box {
     background-image: url('./assets/funny-cat-photo1.jpg');
+    border-radius: 10% 10%;
     padding: 50px;
     margin: 50px;
     background-size: cover;

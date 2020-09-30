@@ -16,10 +16,10 @@ btn.addEventListener('click', async (event) => {
 //FECTH
 const fetchResult = async (event) => {
     event.preventDefault();
-    const apiResponse = await fetch(baseURL);
+    const apiResponse = await fetch(baseURL); 
     let facts = await apiResponse.json();
     let randomIndex = getRandomInt(facts.all.length);
-    let fact = facts.all[randomIndex];
+    let fact = facts.all[randomIndex]; 
     return fact.text
 }
 
